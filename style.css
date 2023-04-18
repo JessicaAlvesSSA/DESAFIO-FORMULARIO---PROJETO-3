@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #E5E5E5;
+}
+
+body::before {
+  content: '';
+  width: 100%;
+  height: 436px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #535971;
+}
+
+h1,
+legend,
+.button {
+  font-family: 'Staatliches', cursive;
+  font-weight: 400;
+}
+
+p,
+label,
+span {
+  font-family: 'Poppins', sans-serif;
+}
+
+.page {
+  width: 750px;
+  margin: auto;
+}
+
+header {
+  margin-top: 138px;
+  width: 417px;
+  color: #FFFFFF;
+}
+
+header h1 {
+  line-height: 60px;
+  font-size: 48px;
+}
+
+header p {
+  font-size: 20px;
+  line-height: 30px;
+  -webkit-text-stroke-width: .7px;
+  -webkit-text-stroke-color: #000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+form {
+  background: #FFFFFF;
+  padding: 64px;
+  margin-top: 58px;
+  gap: 30px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  font-size: 24px;
+  color: #535971;
+}
+
+.sub-legend {
+  font-size: 20px;
+  margin-top: 8px;
+}
+
+.line {
+  background: #E6E6F0;
+  height: 1px;
+  margin-top: 8px;
+  margin-bottom: 32px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 8px 0 16px;
+}
+
+.input-wrapper>label {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #4E4958;
+}
+
+.input-wrapper>label>span {
+  font-size: 12px;
+  color: #C1BCCC;
+}
+
+.input-wrapper>input {
+  background: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  height: 58px;
+  padding: 8px 16px;
+}
+
+.col-2>.input-wrapper,
+.col-3>.input-wrapper:nth-child(1) {
+  width: 50%;
+}
+
+.col-3>.input-wrapper {
+  width: 140px;
+}
+
+.col-2,
+.col-3 {
+  display: flex;
+  justify-content: space-between;
+  gap: 22px;
+}
+
+
+footer {
+  background: #535971;
+  height: 136px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 64px;
+  margin-bottom: 100px;
+  border-top: 1px solid #D6D6D6;
+  border-radius: 0 0 8px 8px;
+}
+
+footer .button {
+  height: 56px;
+  background: #FF5374;
+  border: 0;
+  border-radius: 8px;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+footer .button:hover {
+  background: #f50737;
+}
